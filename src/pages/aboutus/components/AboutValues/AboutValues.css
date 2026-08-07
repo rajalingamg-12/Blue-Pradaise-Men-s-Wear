@@ -1,0 +1,275 @@
+/* ===========================
+   About Values Section
+=========================== */
+
+
+.about-values{
+
+    padding:120px 8%;
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        #ffffff,
+
+        #f8f8f8
+
+    );
+
+}
+
+
+
+
+
+
+/* Header */
+
+
+.values-header{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+.values-header span{
+
+    color:#D4AF37;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+
+.values-header h2{
+
+
+    font-family:"Playfair Display",serif;
+
+    font-size:45px;
+
+    margin:20px 0;
+
+    color:#111;
+
+}
+
+
+
+.values-header p{
+
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* Cards */
+
+
+.values-grid{
+
+
+    margin-top:60px;
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+
+
+.value-card{
+
+
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+
+
+
+
+.value-card:hover{
+
+
+    transform:translateY(-12px);
+
+
+}
+
+
+
+
+
+
+
+.value-icon{
+
+
+    width:75px;
+
+    height:75px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#111;
+
+    color:#D4AF37;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.value-card h3{
+
+
+    font-family:"Playfair Display",serif;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+    color:#111;
+
+
+}
+
+
+
+
+
+
+.value-card p{
+
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+
+@media(max-width:1100px){
+
+
+    .values-grid{
+
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+    .about-values{
+
+
+        padding:80px 6%;
+
+    }
+
+
+
+
+    .values-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+
+
+    .values-header h2{
+
+
+        font-size:34px;
+
+
+    }
+
+
+}

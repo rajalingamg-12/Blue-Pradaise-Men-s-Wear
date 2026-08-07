@@ -1,0 +1,391 @@
+/* ===================================================
+   INSTAGRAM GALLERY
+=================================================== */
+
+.instagram{
+    padding:120px 0;
+    background:linear-gradient(180deg,#ffffff 0%,#f8f9fb 100%);
+    position:relative;
+    overflow:hidden;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.instagram .section-header{
+    text-align:center;
+    max-width:720px;
+    margin:0 auto 70px;
+    position:relative;
+    z-index:2;
+}
+
+.instagram .section-header span{
+    display:inline-block;
+    color:#D4AF37;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.instagram .section-header h2{
+    font-family:"Playfair Display",serif;
+    font-size:48px;
+    color:#111827;
+    margin-bottom:18px;
+}
+
+.instagram .section-header p{
+    font-size:17px;
+    color:#6B7280;
+    line-height:1.8;
+}
+
+/* ==========================================
+   MASONRY GRID
+========================================== */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    grid-auto-rows:270px;
+
+    gap:25px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* Different Heights */
+
+.gallery-card:nth-child(1){
+
+    grid-row:span 2;
+
+}
+
+.gallery-card:nth-child(4){
+
+    grid-row:span 2;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.gallery-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.15);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .8s ease;
+
+}
+
+.gallery-card:hover img{
+
+    transform:scale(1.12);
+
+}
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(17,24,39,.78);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.gallery-card:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.gallery-overlay svg{
+
+    font-size:42px;
+
+    color:#D4AF37;
+
+    margin-bottom:18px;
+
+}
+
+.gallery-overlay span{
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.gallery-btn{
+
+    text-align:center;
+
+    margin-top:70px;
+
+}
+
+.gallery-btn button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#111827;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.gallery-btn button:hover{
+
+    background:#D4AF37;
+
+    color:#111827;
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:992px){
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    grid-auto-rows:240px;
+
+}
+
+.instagram .section-header h2{
+
+    font-size:40px;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.instagram{
+
+    padding:90px 0;
+
+}
+
+.instagram .section-header{
+
+    margin-bottom:50px;
+
+}
+
+.instagram .section-header h2{
+
+    font-size:34px;
+
+}
+
+.instagram .section-header p{
+
+    font-size:15px;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+    grid-auto-rows:280px;
+
+}
+
+.gallery-card:nth-child(1),
+
+.gallery-card:nth-child(4){
+
+    grid-row:span 1;
+
+}
+
+.gallery-overlay svg{
+
+    font-size:34px;
+
+}
+
+.gallery-overlay span{
+
+    font-size:15px;
+
+}
+
+.gallery-btn{
+
+    margin-top:50px;
+
+}
+
+.gallery-btn button{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+.instagram{
+
+    padding:70px 0;
+
+}
+
+.instagram .section-header span{
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+}
+
+.instagram .section-header h2{
+
+    font-size:30px;
+
+}
+
+.instagram .section-header p{
+
+    font-size:14px;
+
+}
+
+.gallery-grid{
+
+    gap:18px;
+
+}
+
+.gallery-card{
+
+    border-radius:16px;
+
+}
+
+.gallery-overlay svg{
+
+    font-size:30px;
+
+}
+
+.gallery-overlay span{
+
+    font-size:14px;
+
+}
+
+.gallery-btn button{
+
+    padding:16px;
+
+    font-size:15px;
+
+}
+
+}

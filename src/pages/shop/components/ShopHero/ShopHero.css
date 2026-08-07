@@ -1,0 +1,249 @@
+/* ==========================
+   SHOP HERO SECTION
+========================== */
+
+
+.shop-hero{
+
+
+    height:420px;
+
+    width:100%;
+
+    position:relative;
+
+    background-image:url("https://images.unsplash.com/photo-1617127365659-c47fa864d8bc");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+
+}
+
+
+
+/* ==========================
+   OVERLAY
+========================== */
+
+
+.shop-hero-overlay{
+
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    );
+
+
+}
+
+
+
+/* ==========================
+   CONTENT
+========================== */
+
+
+.shop-hero-content{
+
+
+    position:relative;
+
+    text-align:center;
+
+    color:white;
+
+    max-width:800px;
+
+    padding:20px;
+
+    animation:shopFade 1s ease;
+
+
+}
+
+
+
+.shop-breadcrumb{
+
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+    margin-bottom:25px;
+
+    opacity:.9;
+
+
+}
+
+
+
+.shop-breadcrumb span{
+
+
+    margin:0 12px;
+
+}
+
+
+
+/* ==========================
+   TITLE
+========================== */
+
+
+.shop-hero-content h1{
+
+
+    font-size:52px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.shop-hero-content h1 span{
+
+
+    display:block;
+
+    color:#d4af37;
+
+
+}
+
+
+
+.shop-hero-content p{
+
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    color:#eee;
+
+
+}
+
+
+
+/* ==========================
+   ANIMATION
+========================== */
+
+
+@keyframes shopFade{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+/* ==========================
+   TABLET
+========================== */
+
+
+@media(max-width:992px){
+
+
+.shop-hero{
+
+    height:360px;
+
+}
+
+
+
+.shop-hero-content h1{
+
+
+    font-size:42px;
+
+
+}
+
+
+}
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+
+@media(max-width:600px){
+
+
+.shop-hero{
+
+    height:320px;
+
+}
+
+
+
+.shop-hero-content h1{
+
+
+    font-size:32px;
+
+
+}
+
+
+
+.shop-hero-content p{
+
+
+    font-size:15px;
+
+
+}
+
+
+}

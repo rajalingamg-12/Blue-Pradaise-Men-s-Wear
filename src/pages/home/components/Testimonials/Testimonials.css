@@ -1,0 +1,353 @@
+/* ===================================================
+   TESTIMONIALS
+=================================================== */
+
+.testimonials{
+    padding:120px 0;
+    background:linear-gradient(180deg,#f8f9fb 0%,#ffffff 100%);
+    position:relative;
+    overflow:hidden;
+}
+
+/* ===========================================
+   SECTION HEADER
+=========================================== */
+
+.testimonials .section-header{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 70px;
+    position:relative;
+    z-index:2;
+}
+
+.testimonials .section-header span{
+    display:inline-block;
+    color:#D4AF37;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.testimonials .section-header h2{
+    font-family:"Playfair Display",serif;
+    font-size:48px;
+    color:#111827;
+    margin-bottom:20px;
+}
+
+.testimonials .section-header p{
+    font-size:17px;
+    color:#6B7280;
+    line-height:1.8;
+}
+
+/* ===========================================
+   GRID
+=========================================== */
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.testimonial-card{
+
+    background:rgba(255,255,255,.95);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.testimonial-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:#D4AF37;
+
+    transform:scaleX(0);
+
+    transition:.4s;
+
+    transform-origin:left;
+
+}
+
+.testimonial-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+/* ===========================================
+   STARS
+=========================================== */
+
+.stars{
+
+    display:flex;
+
+    gap:6px;
+
+    color:#F4B400;
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================================
+   REVIEW
+=========================================== */
+
+.review{
+
+    color:#4B5563;
+
+    font-size:16px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+    font-style:italic;
+
+    position:relative;
+
+}
+
+.review::before{
+
+    content:"❝";
+
+    position:absolute;
+
+    top:-28px;
+
+    left:-8px;
+
+    font-size:60px;
+
+    color:rgba(212,175,55,.15);
+
+    font-family:serif;
+
+}
+
+/* ===========================================
+   CUSTOMER
+=========================================== */
+
+.customer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.customer img{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #D4AF37;
+
+}
+
+.customer h4{
+
+    font-size:18px;
+
+    color:#111827;
+
+    margin-bottom:6px;
+
+}
+
+.customer span{
+
+    color:#6B7280;
+
+    font-size:14px;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:1100px){
+
+.testimonial-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.testimonials{
+
+    padding:90px 0;
+
+}
+
+.testimonials .section-header{
+
+    margin-bottom:50px;
+
+}
+
+.testimonials .section-header h2{
+
+    font-size:36px;
+
+}
+
+.testimonials .section-header p{
+
+    font-size:15px;
+
+}
+
+.testimonial-grid{
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+.testimonial-card{
+
+    padding:30px;
+
+}
+
+.customer img{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.testimonials{
+
+    padding:70px 0;
+
+}
+
+.testimonials .section-header span{
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+}
+
+.testimonials .section-header h2{
+
+    font-size:30px;
+
+}
+
+.testimonials .section-header p{
+
+    font-size:14px;
+
+}
+
+.testimonial-card{
+
+    padding:24px;
+
+}
+
+.review{
+
+    font-size:15px;
+
+}
+
+.customer img{
+
+    width:55px;
+
+    height:55px;
+
+}
+
+.customer h4{
+
+    font-size:16px;
+
+}
+
+.customer span{
+
+    font-size:13px;
+
+}
+
+}

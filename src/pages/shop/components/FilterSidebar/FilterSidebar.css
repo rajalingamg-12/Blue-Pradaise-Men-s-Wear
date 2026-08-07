@@ -1,0 +1,329 @@
+/* ==========================
+   FILTER SIDEBAR
+========================== */
+
+
+.filter-sidebar{
+
+
+    background:#ffffff;
+
+    border:1px solid #eee;
+
+    padding:30px;
+
+    position:sticky;
+
+    top:100px;
+
+}
+
+
+
+/* ==========================
+   HEADER
+========================== */
+
+
+.filter-header{
+
+
+    margin-bottom:30px;
+
+}
+
+
+
+.filter-header h3{
+
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#111;
+
+
+}
+
+
+
+
+/* ==========================
+   FILTER SECTION
+========================== */
+
+
+.filter-section{
+
+
+    border-bottom:1px solid #eee;
+
+    padding-bottom:25px;
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+.filter-section h4{
+
+
+    font-size:17px;
+
+    margin-bottom:18px;
+
+    color:#222;
+
+
+}
+
+
+
+
+.filter-section label{
+
+
+    display:block;
+
+    font-size:15px;
+
+    margin-bottom:12px;
+
+    color:#555;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.filter-section input{
+
+
+    margin-right:10px;
+
+}
+
+
+
+/* ==========================
+   SIZE BUTTONS
+========================== */
+
+
+.size-options{
+
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+.size-options button{
+
+
+    width:38px;
+
+    height:38px;
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+
+}
+
+
+
+.size-options button:hover{
+
+
+    background:#111;
+
+    color:white;
+
+
+}
+
+
+
+/* ==========================
+   COLOR OPTIONS
+========================== */
+
+
+.color-options{
+
+
+    display:flex;
+
+    gap:12px;
+
+
+}
+
+
+
+.color-options span{
+
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    border:1px solid #ddd;
+
+    cursor:pointer;
+
+
+}
+
+
+
+.black{
+
+    background:#000;
+
+}
+
+
+
+.white{
+
+    background:#fff;
+
+}
+
+
+
+.blue{
+
+    background:#1e3a8a;
+
+}
+
+
+
+.brown{
+
+    background:#8b4513;
+
+}
+
+
+
+.grey{
+
+    background:#777;
+
+}
+
+
+
+/* ==========================
+   PRICE
+========================== */
+
+
+.filter-section input[type="range"]{
+
+
+    width:100%;
+
+
+}
+
+
+
+.price-value{
+
+
+    margin-top:12px;
+
+    font-size:14px;
+
+    color:#555;
+
+
+}
+
+
+
+/* ==========================
+   CLEAR BUTTON
+========================== */
+
+
+.clear-filter{
+
+
+    width:100%;
+
+    padding:14px;
+
+    background:#111;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+
+}
+
+
+
+.clear-filter:hover{
+
+
+    background:#d4af37;
+
+
+    color:#111;
+
+
+}
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+
+@media(max-width:992px){
+
+
+.filter-sidebar{
+
+
+    position:relative;
+
+    top:0;
+
+}
+
+
+
+}

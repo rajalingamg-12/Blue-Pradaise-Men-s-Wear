@@ -1,0 +1,255 @@
+.product-card{
+
+    background:#fff;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.product-image{
+
+    height:320px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.hover-image{
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    opacity:0;
+
+}
+
+.product-card:hover .hover-image{
+
+    opacity:1;
+
+}
+
+.product-card:hover .main-image{
+
+    opacity:0;
+
+}
+
+.discount-badge{
+
+    position:absolute;
+
+    top:15px;
+
+    left:15px;
+
+    background:#e53935;
+
+    color:#fff;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.product-icons{
+
+    position:absolute;
+
+    top:15px;
+
+    right:-60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    transition:.35s;
+
+}
+
+.product-card:hover .product-icons{
+
+    right:15px;
+
+}
+
+.product-icons button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.product-icons button:hover{
+
+    background:#111;
+
+    color:#fff;
+
+}
+
+.product-content{
+
+    padding:22px;
+
+}
+
+.category{
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:8px;
+
+}
+
+.product-content h3{
+
+    font-size:20px;
+
+    margin-bottom:10px;
+
+    color:#111;
+
+}
+
+.rating{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin-bottom:15px;
+
+}
+
+.star{
+
+    color:#f5b301;
+
+}
+
+.price{
+
+    display:flex;
+
+    gap:12px;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.new-price{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#111;
+
+}
+
+.old-price{
+
+    color:#999;
+
+    text-decoration:line-through;
+
+}
+
+.cart-btn{
+
+    width:100%;
+
+    border:none;
+
+    padding:14px;
+
+    background:#111;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    border-radius:10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.cart-btn:hover{
+
+    background:#d4af37;
+
+    color:#111;
+
+}

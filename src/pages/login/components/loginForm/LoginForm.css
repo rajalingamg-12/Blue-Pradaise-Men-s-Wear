@@ -1,0 +1,557 @@
+/* ===========================
+   Login Form Section
+=========================== */
+
+.login-form-section{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:60px 8%;
+
+    background:#ffffff;
+
+}
+
+
+
+/* ===========================
+   Login Box
+=========================== */
+
+.login-form-box{
+
+    width:100%;
+
+    max-width:450px;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    background:#ffffff;
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,0.10);
+
+    animation:loginFade .8s ease;
+
+}
+
+
+
+
+
+.login-form-box h1{
+
+    font-family:"Playfair Display",serif;
+
+    font-size:38px;
+
+    color:#111;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.login-form-box p{
+
+    color:#777;
+
+    font-size:15px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* ===========================
+   Input Group
+=========================== */
+
+.input-group{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.input-group label{
+
+    display:block;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    color:#333;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.input-group input{
+
+    width:100%;
+
+    height:52px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    padding:0 16px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+
+
+.input-group input:focus{
+
+    border-color:#D4AF37;
+
+    box-shadow:
+
+    0 0 0 3px rgba(212,175,55,0.15);
+
+}
+
+
+
+
+
+.input-group small{
+
+    display:block;
+
+    margin-top:7px;
+
+    color:red;
+
+    font-size:12px;
+
+}
+
+
+
+/* ===========================
+   Password
+=========================== */
+
+.password-box{
+
+    position:relative;
+
+}
+
+/* .password-box input{
+
+    padding-right:50px;
+
+}  */
+
+.password-toggle{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:#777;
+
+    font-size:17px;
+
+}
+
+
+
+.password-toggle:hover{
+
+    color:#D4AF37;
+
+}
+
+
+
+/* ===========================
+   Login Options
+=========================== */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    font-size:14px;
+
+}
+
+
+
+.login-options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+    color:#555;
+
+}
+
+
+
+.login-options input{
+
+    width:15px;
+
+    height:15px;
+
+}
+
+
+
+.login-options a{
+
+    color:#D4AF37;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.login-options a:hover{
+
+    color:#111;
+
+}
+
+
+
+/* ===========================
+   Login Button
+=========================== */
+
+.login-btn{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#111;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+
+
+.login-btn:hover{
+
+    background:#D4AF37;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+
+
+/* ===========================
+   Divider
+=========================== */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:30px 0;
+
+}
+
+
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    height:1px;
+
+    flex:1;
+
+    background:#ddd;
+
+}
+
+
+
+.divider span{
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+
+
+
+
+/* ===========================
+   Social Login
+=========================== */
+
+.social-login{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+
+.social-login button{
+
+    flex:1;
+
+    height:45px;
+
+    border-radius:25px;
+
+    border:1px solid #ddd;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.social-login button:hover{
+
+    border-color:#D4AF37;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+.google-btn svg{
+
+    color:#db4437;
+
+}
+
+
+
+.facebook-btn svg{
+
+    color:#1877f2;
+
+}
+
+
+
+
+
+/* ===========================
+   Register
+=========================== */
+
+.register-text{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+
+
+.register-text a{
+
+    margin-left:5px;
+
+    color:#D4AF37;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+}
+
+
+
+.register-text a:hover{
+
+    color:#111;
+
+}
+
+
+
+
+
+/* ===========================
+   Animation
+=========================== */
+
+@keyframes loginFade{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:900px){
+
+
+    .login-form-section{
+
+        padding:40px 20px;
+
+    }
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+    .login-form-box{
+
+        padding:30px 20px;
+
+        border-radius:18px;
+
+    }
+
+
+
+    .login-form-box h1{
+
+        font-size:32px;
+
+    }
+
+
+
+    .social-login{
+
+        flex-direction:column;
+
+    }
+
+
+
+    .login-options{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+
+}

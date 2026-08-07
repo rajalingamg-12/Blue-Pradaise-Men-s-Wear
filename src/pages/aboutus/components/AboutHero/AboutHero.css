@@ -1,0 +1,295 @@
+.about-hero{
+
+    height:90vh;
+
+    position:relative;
+
+    background-image:url("../../assets/shirt.jpeg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+
+
+
+
+/* Zoom Effect */
+
+.about-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:inherit;
+
+    background-size:cover;
+
+    background-position:center;
+
+    animation:aboutZoom 12s infinite alternate;
+
+}
+
+
+
+
+
+@keyframes aboutZoom{
+
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* Overlay */
+
+.about-hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(0,0,0,0.75),
+
+        rgba(0,0,0,0.45)
+
+    );
+
+
+}
+
+
+
+
+
+
+
+/* Content */
+
+.about-hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    text-align:center;
+
+    color:white;
+
+    max-width:800px;
+
+    padding:30px;
+
+    animation:heroFade 1s ease;
+
+}
+
+
+
+
+
+.about-hero-content span{
+
+
+    color:#D4AF37;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+
+}
+
+
+
+
+
+
+
+.about-hero-content h1{
+
+
+    font-family:"Playfair Display",serif;
+
+    font-size:60px;
+
+    line-height:1.2;
+
+    margin:25px 0;
+
+
+}
+
+
+
+
+
+
+.about-hero-content p{
+
+
+    font-size:18px;
+
+    color:#eeeeee;
+
+    line-height:1.8;
+
+    max-width:600px;
+
+    margin:auto;
+
+
+}
+
+
+
+
+
+
+
+
+.about-hero-btn{
+
+
+    display:inline-flex;
+
+    margin-top:35px;
+
+    padding:15px 40px;
+
+    border-radius:30px;
+
+    background:#D4AF37;
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.4s;
+
+
+}
+
+
+
+
+
+.about-hero-btn:hover{
+
+
+    background:white;
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+
+
+@keyframes heroFade{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:900px){
+
+
+    .about-hero{
+
+        height:75vh;
+
+    }
+
+
+
+    .about-hero-content h1{
+
+
+        font-size:38px;
+
+
+    }
+
+
+
+    .about-hero-content p{
+
+
+        font-size:15px;
+
+
+    }
+
+
+}

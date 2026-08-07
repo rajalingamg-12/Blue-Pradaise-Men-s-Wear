@@ -1,0 +1,501 @@
+/* ===================================================
+   TRENDING COLLECTION
+=================================================== */
+
+.trending{
+    padding:120px 0;
+    background:#f8f9fb;
+    overflow:hidden;
+}
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.trending .section-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.trending .section-header span{
+    display:inline-block;
+    color:#D4AF37;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.trending .section-header h2{
+    font-family:"Playfair Display", serif;
+    font-size:48px;
+    color:#111827;
+    margin-bottom:18px;
+}
+
+.trending .section-header p{
+    max-width:650px;
+    margin:auto;
+    color:#6B7280;
+    font-size:17px;
+    line-height:1.8;
+}
+
+/* ==========================================
+   FILTER TABS
+========================================== */
+
+.trending-tabs{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-bottom:60px;
+
+}
+
+.trending-tabs button{
+
+    border:none;
+
+    background:#fff;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    color:#374151;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+
+}
+
+.trending-tabs button:hover{
+
+    background:#111827;
+
+    color:#fff;
+
+}
+
+.trending-tabs .active{
+
+    background:#D4AF37;
+
+    color:#111827;
+
+}
+
+/* ==========================================
+   PRODUCT GRID
+========================================== */
+
+.trending-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.trend-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.trend-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.trend-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.trend-image img{
+
+    width:100%;
+
+    height:380px;
+
+    object-fit:cover;
+
+    transition:.7s;
+
+}
+
+.trend-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   BADGE
+========================================== */
+
+.trend-badge{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    background:#D4AF37;
+
+    color:#111827;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+/* ==========================================
+   HEART
+========================================== */
+
+.trend-heart{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+.trend-heart:hover{
+
+    background:#D4AF37;
+
+    color:#fff;
+
+    transform:rotate(12deg);
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.trend-content{
+
+    padding:24px;
+
+}
+
+.trend-content h3{
+
+    font-size:22px;
+
+    color:#111827;
+
+    margin-bottom:12px;
+
+    line-height:1.4;
+
+}
+
+.trend-content span{
+
+    display:block;
+
+    font-size:26px;
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+    margin-bottom:24px;
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.trend-content button{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:50px;
+
+    background:#111827;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.trend-content button:hover{
+
+    background:#D4AF37;
+
+    color:#111827;
+
+}
+
+/* ==========================================
+   FOOTER BUTTON
+========================================== */
+
+.trend-footer{
+
+    text-align:center;
+
+    margin-top:70px;
+
+}
+
+.trend-footer button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#D4AF37;
+
+    color:#111827;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.trend-footer button:hover{
+
+    background:#111827;
+
+    color:#fff;
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1200px){
+
+.trending-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.trending{
+
+    padding:90px 0;
+
+}
+
+.trending .section-header h2{
+
+    font-size:36px;
+
+}
+
+.trending .section-header p{
+
+    font-size:15px;
+
+}
+
+.trending-tabs{
+
+    gap:12px;
+
+}
+
+.trending-tabs button{
+
+    padding:12px 20px;
+
+    font-size:14px;
+
+}
+
+.trending-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.trend-image img{
+
+    height:340px;
+
+}
+
+.trend-content h3{
+
+    font-size:20px;
+
+}
+
+.trend-content span{
+
+    font-size:22px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.trending{
+
+    padding:70px 0;
+
+}
+
+.trending .section-header h2{
+
+    font-size:30px;
+
+}
+
+.trending .section-header span{
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+}
+
+.trend-image img{
+
+    height:300px;
+
+}
+
+.trend-content{
+
+    padding:20px;
+
+}
+
+.trend-content button{
+
+    font-size:14px;
+
+}
+
+.trend-footer button{
+
+    width:100%;
+
+    justify-content:center;
+
+    padding:16px;
+
+}
+
+}

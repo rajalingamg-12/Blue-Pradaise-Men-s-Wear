@@ -1,0 +1,166 @@
+/* ==========================
+   SHOP PAGE
+========================== */
+
+
+.shop-page{
+
+    width:100%;
+    background:#fff;
+
+}
+
+
+/* ==========================
+   SHOP MAIN CONTAINER
+========================== */
+
+
+.shop-container{
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    gap:40px;
+
+    padding:70px 8%;
+
+}
+
+
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+
+.shop-sidebar{
+
+    position:relative;
+
+}
+
+
+
+/* ==========================
+   PRODUCTS AREA
+========================== */
+
+
+.shop-products{
+
+    width:100%;
+
+}
+
+
+
+/* ==========================
+   TOP BAR
+========================== */
+
+
+.shop-topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.shop-search input{
+
+
+    width:350px;
+
+    padding:14px 20px;
+
+    border:1px solid #ddd;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+
+
+.shop-topbar select{
+
+
+    padding:14px 20px;
+
+    border:1px solid #ddd;
+
+    background:white;
+
+    cursor:pointer;
+
+}
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+
+@media(max-width:992px){
+
+
+.shop-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.shop-sidebar{
+
+    order:2;
+
+}
+
+
+.shop-products{
+
+    order:1;
+
+}
+
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.shop-topbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    align-items:stretch;
+
+}
+
+
+.shop-search input{
+
+    width:100%;
+
+}
+
+
+
+}

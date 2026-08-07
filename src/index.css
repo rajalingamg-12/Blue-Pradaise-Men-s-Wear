@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap");
+
+:root{
+
+    --primary:#0F172A;
+    --secondary:#D4AF37;
+    --white:#ffffff;
+    --light:#f8f8f8;
+    --text:#6b7280;
+
+    --container:1400px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Outfit',sans-serif;
+    overflow-x:hidden;
+    background:#fff;
+    color:var(--primary);
+
+}
+
+h1,h2,h3,h4,h5{
+
+    font-family:'Playfair Display',serif;
+
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+button{
+
+    cursor:pointer;
+    border:none;
+    background:none;
+    font-family:inherit;
+
+}
+
+.container{
+
+    width:min(92%,var(--container));
+    margin:auto;
+
 }
