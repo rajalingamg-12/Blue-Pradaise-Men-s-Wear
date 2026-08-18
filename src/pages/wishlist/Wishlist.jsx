@@ -8,25 +8,60 @@ import EmptyWishlist from "./components/EmptyWishlist";
 
 import "./Wishlist.css";
 
+
 function Wishlist() {
 
     const {
-
         wishlistItems,
-
         removeFromWishlist
-
     } = useWishlist();
 
-    const { addToCart } = useCart();
+
+    const {
+        addToCart
+    } = useCart();
+
+
+    /* ==================================================
+       ADD TO CART
+    ================================================== */
+
+    const handleAddToCart = (item) => {
+
+        addToCart(item);
+
+    };
+
+
+    /* ==================================================
+       REMOVE FROM WISHLIST
+    ================================================== */
+
+    const handleRemove = (item) => {
+
+        removeFromWishlist(item.id);
+
+    };
+
 
     return (
 
         <div className="wishlist-page">
 
+
+            {/* ==================================================
+               HEADER
+            ================================================== */}
+
             <div className="wishlist-header">
 
-                <h1>My Wishlist</h1>
+                <span className="wishlist-label">
+                    MY COLLECTION
+                </span>
+
+                <h1>
+                    My Wishlist
+                </h1>
 
                 <p>
                     Save your favorite products for later.
@@ -34,11 +69,21 @@ function Wishlist() {
 
             </div>
 
+
+            {/* ==================================================
+               EMPTY WISHLIST
+            ================================================== */}
+
             {wishlistItems.length === 0 ? (
 
                 <EmptyWishlist />
 
             ) : (
+
+
+                /* ==================================================
+                   WISHLIST PRODUCTS
+                ================================================== */
 
                 <div className="wishlist-grid">
 
@@ -47,8 +92,8 @@ function Wishlist() {
                         <WishlistItem
                             key={item.id}
                             item={item}
-                            addToCart={addToCart}
-                            removeFromWishlist={removeFromWishlist}
+                            addToCart={handleAddToCart}
+                            removeFromWishlist={handleRemove}
                         />
 
                     ))}
@@ -62,5 +107,6 @@ function Wishlist() {
     );
 
 }
+
 
 export default Wishlist;

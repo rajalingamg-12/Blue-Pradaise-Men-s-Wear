@@ -1,501 +1,709 @@
-/* ===================================================
+/* ==========================================================
    TRENDING COLLECTION
-=================================================== */
+========================================================== */
 
-.trending{
-    padding:120px 0;
-    background:#f8f9fb;
-    overflow:hidden;
+.trending1 {
+    padding: 120px 0;
+
+    background: #f8f9fb;
+
+    overflow: hidden;
 }
 
-/* ==========================================
+
+/* ==========================================================
    SECTION HEADER
-========================================== */
+========================================================== */
 
-.trending .section-header{
-    text-align:center;
-    margin-bottom:60px;
+.trending1 .section-header1 {
+    text-align: center;
+
+    margin-bottom: 60px;
 }
 
-.trending .section-header span{
-    display:inline-block;
-    color:#D4AF37;
-    font-size:14px;
-    font-weight:600;
-    letter-spacing:4px;
-    text-transform:uppercase;
-    margin-bottom:15px;
+.trending1 .section-header1 span {
+    display: inline-block;
+
+    color: #d4af37;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
 }
 
-.trending .section-header h2{
-    font-family:"Playfair Display", serif;
-    font-size:48px;
-    color:#111827;
-    margin-bottom:18px;
+.trending1 .section-header1 h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    color: #111827;
+
+    margin-bottom: 18px;
 }
 
-.trending .section-header p{
-    max-width:650px;
-    margin:auto;
-    color:#6B7280;
-    font-size:17px;
-    line-height:1.8;
+.trending1 .section-header1 p {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #6b7280;
+
+    font-size: 17px;
+
+    line-height: 1.8;
 }
 
-/* ==========================================
+
+/* ==========================================================
    FILTER TABS
-========================================== */
+========================================================== */
 
-.trending-tabs{
+.trending-tabs1 {
+    display: flex;
 
-    display:flex;
+    justify-content: center;
 
-    justify-content:center;
+    align-items: center;
 
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 
-    gap:18px;
+    gap: 18px;
 
-    margin-bottom:60px;
-
+    margin-bottom: 60px;
 }
 
-.trending-tabs button{
+.trending-tabs1 button {
+    border: none;
 
-    border:none;
+    background: #fff;
 
-    background:#fff;
+    color: #374151;
 
-    padding:14px 28px;
+    padding: 14px 28px;
 
-    border-radius:40px;
+    border-radius: 40px;
 
-    font-size:15px;
+    font-size: 15px;
 
-    font-weight:600;
+    font-weight: 600;
 
-    cursor:pointer;
+    cursor: pointer;
 
-    color:#374151;
+    transition: all 0.35s ease;
 
-    transition:.35s;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.06);
-
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
-.trending-tabs button:hover{
+.trending-tabs1 button:hover {
+    background: #111827;
 
-    background:#111827;
+    color: #fff;
 
-    color:#fff;
-
+    transform: translateY(-2px);
 }
 
-.trending-tabs .active{
+.trending-tabs1 button.active {
+    background: #d4af37;
 
-    background:#D4AF37;
+    color: #111827;
 
-    color:#111827;
-
+    box-shadow:
+        0 8px 20px rgba(212, 175, 55, 0.2);
 }
 
-/* ==========================================
+
+/* ==========================================================
    PRODUCT GRID
-========================================== */
+========================================================== */
 
-.trending-grid{
+.trending-grid1 {
+    display: grid;
 
-    display:grid;
+    grid-template-columns: repeat(4, 1fr);
 
-    grid-template-columns:repeat(4,1fr);
+    gap: 30px;
+}
 
-    gap:30px;
+
+/* ==========================================================
+   PRODUCT CARD
+========================================================== */
+
+.trend-card1 {
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.trend-card1:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================================
+   PRODUCT IMAGE
+========================================================== */
+
+.trend-image1 {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.trend-image1 img {
+    width: 100%;
+
+    height: 380px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.7s ease;
+}
+
+.trend-card1:hover .trend-image1 img {
+    transform: scale(1.08);
+}
+
+
+/* ==========================================================
+   CATEGORY BADGE
+========================================================== */
+
+.trend-badge1 {
+    position: absolute;
+
+    top: 18px;
+
+    left: 18px;
+
+    z-index: 2;
+
+    background: #d4af37;
+
+    color: #111827;
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================================
+   WISHLIST BUTTON
+========================================================== */
+
+.trend-heart1 {
+    position: absolute;
+
+    top: 18px;
+
+    right: 18px;
+
+    z-index: 3;
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #111827;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all 0.35s ease;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.trend-heart1:hover {
+    background: #d4af37;
+
+    color: #fff;
+
+    transform: scale(1.08);
+}
+
+
+/* ==========================================================
+   ACTIVE WISHLIST
+========================================================== */
+
+.trend-heart1.active {
+    background: #d4af37;
+
+    color: #fff;
+}
+
+.trend-heart1.active:hover {
+    background: #111827;
+
+    color: #fff;
+}
+
+
+/* ==========================================================
+   PRODUCT CONTENT
+========================================================== */
+
+.trend-content1 {
+    padding: 24px;
+}
+
+.trend-content1 h3 {
+    color: #111827;
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==========================================================
+   PRODUCT PRICE
+========================================================== */
+
+.trend-price1 {
+    display: block;
+
+    color: #d4af37;
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+
+/* ==========================================================
+   PRODUCT ACTIONS
+========================================================== */
+
+.trend-actions1 {
+    display: flex;
+
+    gap: 10px;
+
+    width: 100%;
+
+    margin-top: 15px;
+}
+
+
+/* ==========================================================
+   COMMON ACTION BUTTON
+========================================================== */
+
+.trend-actions1 button {
+    flex: 1;
+
+    min-height: 46px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 10px 12px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* ==========================================================
+   ADD TO CART
+========================================================== */
+
+.trend-cart-btn1 {
+    background: #111827;
+
+    color: #fff;
+}
+
+.trend-cart-btn1:hover {
+    background: #d4af37;
+
+    color: #111827;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(212, 175, 55, 0.25);
+}
+
+
+/* ==========================================================
+   BUY NOW
+========================================================== */
+
+.trend-buy-btn1 {
+    background: #d4af37;
+
+    color: #111827;
+}
+
+.trend-buy-btn1:hover {
+    background: #111827;
+
+    color: #fff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(17, 24, 39, 0.2);
+}
+
+
+/* ==========================================================
+   ACTION BUTTON ACTIVE
+========================================================== */
+
+.trend-actions1 button:active {
+    transform: scale(0.97);
+}
+
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.trend-footer1 {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 70px;
+}
+
+.trend-footer1 button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 17px 38px;
+
+    background: #111827;
+
+    color: #fff;
+
+    border: 1px solid #111827;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.35s ease;
+}
+
+.trend-footer1 button svg {
+    font-size: 14px;
+
+    transition: transform 0.35s ease;
+}
+
+.trend-footer1 button:hover {
+    background: #d4af37;
+
+    color: #111827;
+
+    border-color: #d4af37;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 28px rgba(212, 175, 55, 0.25);
+}
+
+.trend-footer1 button:hover svg {
+    transform: translateX(6px);
+}
+
+
+/* ==========================================================
+   LARGE TABLET / SMALL DESKTOP
+========================================================== */
+
+@media (max-width: 1200px) {
+
+    .trending-grid1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
-/* ==========================================
-   CARD
-========================================== */
 
-.trend-card{
+/* ==========================================================
+   TABLET
+========================================================== */
 
-    background:#fff;
+@media (max-width: 768px) {
 
-    border-radius:20px;
+    .trending1 {
+        padding: 90px 0;
+    }
 
-    overflow:hidden;
 
-    transition:.4s;
+    /* Section Header */
 
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    .trending1 .section-header1 {
+        margin-bottom: 45px;
+    }
 
-}
+    .trending1 .section-header1 h2 {
+        font-size: 36px;
+    }
 
-.trend-card:hover{
+    .trending1 .section-header1 p {
+        font-size: 15px;
 
-    transform:translateY(-10px);
+        padding: 0 15px;
+    }
 
-    box-shadow:0 25px 60px rgba(0,0,0,.12);
 
-}
+    /* Tabs */
 
-/* ==========================================
-   IMAGE
-========================================== */
+    .trending-tabs1 {
+        gap: 12px;
 
-.trend-image{
+        margin-bottom: 45px;
+    }
 
-    position:relative;
+    .trending-tabs1 button {
+        padding: 12px 20px;
 
-    overflow:hidden;
+        font-size: 14px;
+    }
 
-}
 
-.trend-image img{
+    /* Grid */
 
-    width:100%;
+    .trending-grid1 {
+        grid-template-columns: 1fr;
 
-    height:380px;
+        gap: 25px;
+    }
 
-    object-fit:cover;
 
-    transition:.7s;
+    /* Image */
 
-}
+    .trend-image1 img {
+        height: 340px;
+    }
 
-.trend-card:hover img{
 
-    transform:scale(1.08);
+    /* Content */
 
-}
+    .trend-content1 h3 {
+        font-size: 20px;
+    }
 
-/* ==========================================
-   BADGE
-========================================== */
+    .trend-price1 {
+        font-size: 22px;
+    }
 
-.trend-badge{
 
-    position:absolute;
+    /* Actions */
 
-    top:18px;
+    .trend-actions1 {
+        gap: 8px;
+    }
 
-    left:18px;
+    .trend-actions1 button {
+        font-size: 12px;
 
-    background:#D4AF37;
+        padding: 10px 8px;
+    }
 
-    color:#111827;
 
-    padding:8px 16px;
+    /* Footer */
 
-    border-radius:30px;
+    .trend-footer1 {
+        margin-top: 50px;
+    }
 
-    font-size:12px;
+    .trend-footer1 button {
+        padding: 15px 30px;
 
-    font-weight:600;
-
-    letter-spacing:.5px;
-
-}
-
-/* ==========================================
-   HEART
-========================================== */
-
-.trend-heart{
-
-    position:absolute;
-
-    top:18px;
-
-    right:18px;
-
-    width:46px;
-
-    height:46px;
-
-    border:none;
-
-    border-radius:50%;
-
-    background:#fff;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
+        font-size: 14px;
+    }
 
 }
 
-.trend-heart:hover{
 
-    background:#D4AF37;
+/* ==========================================================
+   MOBILE
+========================================================== */
 
-    color:#fff;
+@media (max-width: 480px) {
 
-    transform:rotate(12deg);
+    .trending1 {
+        padding: 70px 0;
+    }
 
-}
 
-/* ==========================================
-   CONTENT
-========================================== */
+    /* Section Header */
 
-.trend-content{
+    .trending1 .section-header1 h2 {
+        font-size: 30px;
+    }
 
-    padding:24px;
+    .trending1 .section-header1 span {
+        font-size: 12px;
 
-}
+        letter-spacing: 3px;
+    }
 
-.trend-content h3{
+    .trending1 .section-header1 p {
+        font-size: 14px;
 
-    font-size:22px;
+        line-height: 1.7;
+    }
 
-    color:#111827;
 
-    margin-bottom:12px;
+    /* Tabs */
 
-    line-height:1.4;
+    .trending-tabs1 {
+        gap: 8px;
 
-}
+        margin-bottom: 35px;
+    }
 
-.trend-content span{
+    .trending-tabs1 button {
+        padding: 10px 16px;
 
-    display:block;
+        font-size: 12px;
+    }
 
-    font-size:26px;
 
-    color:#D4AF37;
+    /* Image */
 
-    font-weight:700;
+    .trend-image1 img {
+        height: 300px;
+    }
 
-    margin-bottom:24px;
 
-}
+    /* Wishlist */
 
-/* ==========================================
-   BUTTON
-========================================== */
+    .trend-heart1 {
+        width: 42px;
 
-.trend-content button{
+        height: 42px;
 
-    width:100%;
+        top: 15px;
 
-    display:flex;
+        right: 15px;
+    }
 
-    justify-content:center;
 
-    align-items:center;
+    /* Content */
 
-    gap:10px;
+    .trend-content1 {
+        padding: 20px;
+    }
 
-    border:none;
+    .trend-content1 h3 {
+        font-size: 18px;
+    }
 
-    padding:15px;
+    .trend-price1 {
+        font-size: 22px;
 
-    border-radius:50px;
+        margin-bottom: 15px;
+    }
 
-    background:#111827;
 
-    color:#fff;
+    /* Actions */
 
-    font-size:15px;
+    .trend-actions1 {
+        flex-direction: column;
 
-    font-weight:600;
+        gap: 8px;
+    }
 
-    cursor:pointer;
+    .trend-actions1 button {
+        width: 100%;
 
-    transition:.35s;
+        min-height: 44px;
 
-}
+        font-size: 12px;
+    }
 
-.trend-content button:hover{
 
-    background:#D4AF37;
+    /* Footer */
 
-    color:#111827;
+    .trend-footer1 {
+        margin-top: 40px;
+    }
 
-}
+    .trend-footer1 button {
+        width: 100%;
 
-/* ==========================================
-   FOOTER BUTTON
-========================================== */
+        padding: 15px 20px;
 
-.trend-footer{
-
-    text-align:center;
-
-    margin-top:70px;
-
-}
-
-.trend-footer button{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    padding:18px 40px;
-
-    border:none;
-
-    border-radius:50px;
-
-    background:#D4AF37;
-
-    color:#111827;
-
-    font-size:16px;
-
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.35s;
-
-}
-
-.trend-footer button:hover{
-
-    background:#111827;
-
-    color:#fff;
-
-    transform:translateY(-4px);
-
-}
-
-/* ==========================================
-   RESPONSIVE
-========================================== */
-
-@media(max-width:1200px){
-
-.trending-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.trending{
-
-    padding:90px 0;
-
-}
-
-.trending .section-header h2{
-
-    font-size:36px;
-
-}
-
-.trending .section-header p{
-
-    font-size:15px;
-
-}
-
-.trending-tabs{
-
-    gap:12px;
-
-}
-
-.trending-tabs button{
-
-    padding:12px 20px;
-
-    font-size:14px;
-
-}
-
-.trending-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.trend-image img{
-
-    height:340px;
-
-}
-
-.trend-content h3{
-
-    font-size:20px;
-
-}
-
-.trend-content span{
-
-    font-size:22px;
-
-}
-
-}
-
-@media(max-width:480px){
-
-.trending{
-
-    padding:70px 0;
-
-}
-
-.trending .section-header h2{
-
-    font-size:30px;
-
-}
-
-.trending .section-header span{
-
-    font-size:12px;
-
-    letter-spacing:3px;
-
-}
-
-.trend-image img{
-
-    height:300px;
-
-}
-
-.trend-content{
-
-    padding:20px;
-
-}
-
-.trend-content button{
-
-    font-size:14px;
-
-}
-
-.trend-footer button{
-
-    width:100%;
-
-    justify-content:center;
-
-    padding:16px;
-
-}
+        font-size: 14px;
+    }
 
 }

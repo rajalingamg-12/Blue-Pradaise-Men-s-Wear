@@ -171,10 +171,11 @@
 
 .nav-menu a {
     position: relative;
-    color: #fff;
+    color: #070707;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 900;
     transition: .3s;
+    text-decoration: none;
 }
 
 .navbar.active .nav-menu a {
