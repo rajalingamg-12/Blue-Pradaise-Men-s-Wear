@@ -1,36 +1,36 @@
-import img1 from "../../components/TrendingCollection/assets/new1.jpeg";
-import img2 from "../../components/TrendingCollection/assets/new2.jpeg";
-import img3 from "../../components/TrendingCollection/assets/new3.jpeg";
-import img4 from "../../components/TrendingCollection/assets/new4.jpeg";
+import img1 from "../../components/TrendingCollection/assets/blue25.jpeg";
+import img2 from "../../components/TrendingCollection/assets/blue21.jpeg";
+import img3 from "../../components/TrendingCollection/assets/blue26.jpeg";
+import img4 from "../../components/TrendingCollection/assets/blue27.jpeg";
 
 const trendingProducts = [
     {
         id: 1,
         image: img1,
-        title: "Premium Linen Shirt",
+        title: "Oversized Quarter-Zip Polo T-Shirt",
         category: "New Arrival",
-        price: 1899
+        price: 899
     },
     {
         id: 2,
         image: img2,
-        title: "Luxury Polo T-Shirt",
+        title: "Boot Cut Pants",
         category: "Trending",
         price: 1499
     },
     {
         id: 3,
         image: img3,
-        title: "Slim Fit Chinos",
+        title: "Denim Shirt Collection",
         category: "Best Seller",
-        price: 2299
+        price: 1099
     },
     {
         id: 4,
         image: img4,
-        title: "Classic Blazer",
+        title: "Track Pants Collection",
         category: "Editor's Pick",
-        price: 5299
+        price: 999
     }
 ];
 

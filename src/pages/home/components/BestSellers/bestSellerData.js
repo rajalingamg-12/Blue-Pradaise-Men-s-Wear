@@ -1,7 +1,7 @@
-import product1 from "../../../../assets/product1..jpeg";
-import product2 from "../../../../assets/product2..jpeg";
-import product3 from "../../../../assets/product3..jpeg";
-import product4 from "../../../../assets/product4..jpeg";
+import product1 from "../../../../assets/blue9.jpeg";
+import product2 from "../../../../assets/blue3.jpeg";
+import product3 from "../../../../assets/blue23.jpeg";
+import product4 from "../../../../assets/blue10.jpeg";
 
 const bestSellers = [
     {
@@ -9,17 +9,17 @@ const bestSellers = [
         image: product1,
         name: "Classic Oxford Shirt",
         category: "Shirts",
-        price: 1699,
-        oldPrice: 2199,
+        price: 900,
+        oldPrice: 1200,
         rating: 5
     },
     {
         id: 2,
         image: product2,
-        name: "Premium Polo T-Shirt",
+        name: "Acid-Wash OverSized T-Shirt",
         category: "T-Shirts",
-        price: 1199,
-        oldPrice: 1499,
+        price: 700,
+        oldPrice: 950,
         rating: 5
     },
     {
@@ -27,17 +27,17 @@ const bestSellers = [
         image: product3,
         name: "Slim Fit Trouser",
         category: "Trousers",
-        price: 1899,
-        oldPrice: 2499,
+        price: 1150,
+        oldPrice: 1850,
         rating: 4
     },
     {
         id: 4,
         image: product4,
-        name: "Luxury Casual Blazer",
-        category: "Blazers",
-        price: 5299,
-        oldPrice: 6499,
+        name: "Mom Fit Pants",
+        category: "Pants",
+        price: 1200,
+        oldPrice: 2000,
         rating: 5
     }
 ];

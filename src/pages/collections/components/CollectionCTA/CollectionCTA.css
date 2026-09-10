@@ -7,7 +7,7 @@
 
     position:relative;
 
-    height:480px;
+    height:580px;
 
     display:flex;
 
@@ -15,7 +15,7 @@
 
     align-items:center;
 
-    background-image:url("../../assets/coll7.jpeg");
+    background-image:url("../../assets/bluecoll.jpeg");
 
     background-size:cover;
 

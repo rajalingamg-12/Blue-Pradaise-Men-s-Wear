@@ -1,7 +1,7 @@
-import formal from "../../../../assets/suit1.jpeg";
-import casual from "../../../../assets/suit2.jpeg";
-import wedding from "../../../../assets/suit3.jpeg";
-import office from "../../../../assets/suit4.jpeg";
+import formal from "../../../../assets/blue16.jpeg";
+import casual from "../../../../assets/blue14.jpeg";
+import baggy from "../../../../assets/blue24.jpeg";
+import embroidery from "../../../../assets/blue8.jpeg";
 
 const styles = [
 
@@ -21,16 +21,16 @@ const styles = [
 
     {
         id:3,
-        title:"Wedding Collection",
+        title:"Baggy Collection",
         subtitle:"Premium outfits designed for unforgettable celebrations.",
-        image:wedding
+        image:baggy
     },
 
     {
         id:4,
-        title:"Office Wear",
-        subtitle:"Professional looks that blend elegance with confidence.",
-        image:office
+        title:"Embroidery Wear",
+        subtitle:"Traditional looks that blend elegance with confidence.",
+        image:embroidery
     }
 
 ];

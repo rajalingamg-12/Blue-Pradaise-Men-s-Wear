@@ -129,7 +129,7 @@ function Footer() {
 
                                     <FaPhoneAlt />
 
-                                    +91 98765 43210
+                                    +91 79426 79764
 
                                 </li>
 
@@ -145,7 +145,8 @@ function Footer() {
 
                                     <FaMapMarkerAlt />
 
-                                    Nagercoil, Tamil Nadu
+                                    Under the Bridge ,TVM Road,Parvathipuram,Nagercoil,
+                                    Tamil Nadu
 
                                 </li>
 
@@ -159,7 +160,7 @@ function Footer() {
 
                         <p>
 
-                            © 2026 Blue Paradise Men's Wear.
+                            © 2018 Blue Paradise Men's Wear.
                             All Rights Reserved.
 
                         </p>

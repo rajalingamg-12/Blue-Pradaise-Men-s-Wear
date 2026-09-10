@@ -1,7 +1,7 @@
 import "./PromoBanner.css";
 import { FaArrowRight } from "react-icons/fa";
 
-import banner from "../../../../assets/dot-ban.png";
+import banner from "../../../../assets/blue-promo.jpeg";
 
 function PromoBanner() {
 

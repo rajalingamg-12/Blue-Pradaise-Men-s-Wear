@@ -48,7 +48,7 @@ function ContactMap(){
 
                     title="Blue Paradise Store Location"
 
-                    src="https://www.google.com/maps/embed?pb=https://maps.app.goo.gl/TZRUjvtCbiBXgPRA9"
+                    src="https://www.google.com/maps?q=Blue%20Paradise%20Men's%20Wear&output=embed"
 
                     loading="lazy"
 

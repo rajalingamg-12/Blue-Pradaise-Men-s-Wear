@@ -1,308 +1,707 @@
-/* ===================================================
+/* =========================================================
    BRAND STORY
-=================================================== */
+========================================================= */
 
-.brand-story{
-    padding:120px 0;
-    background:#ffffff;
-    position:relative;
-    overflow:hidden;
+.brand-story {
+    position: relative;
+    width: 100%;
+
+    padding: 120px 0;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
 }
 
-
-/* ===========================================
-   LAYOUT
-=========================================== */
-
-.brand-container{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:70px;
-    align-items:center;
-    position:relative;
-    z-index:2;
+.brand-story *,
+.brand-story *::before,
+.brand-story *::after {
+    box-sizing: border-box;
 }
 
-/* ===========================================
-   IMAGE
-=========================================== */
+/* =========================================================
+   CONTAINER
+========================================================= */
 
-.brand-image{
-    position:relative;
+.brand-story .container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0 25px;
 }
 
-.brand-image img{
-    width:100%;
-    height:650px;
-    object-fit:cover;
-    border-radius:30px;
-    transition:.6s;
-    box-shadow:0 20px 60px rgba(0,0,0,.12);
+.brand-container {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 70px;
+
+    width: 100%;
 }
 
-.brand-image:hover img{
-    transform:scale(1.03);
+/* =========================================================
+   IMAGE SECTION
+========================================================= */
+
+.brand-image {
+    position: relative;
+
+    width: 100%;
 }
 
-/* ===========================================
+.brand-image img {
+    display: block;
+
+    width: 100%;
+    height: 650px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.6s ease,
+        box-shadow 0.6s ease;
+}
+
+.brand-image:hover img {
+    transform: scale(1.025);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.16);
+}
+
+/* =========================================================
    EXPERIENCE CARD
-=========================================== */
+========================================================= */
 
-.experience-card{
-    position:absolute;
-    right:-30px;
-    bottom:40px;
+.experience-card {
+    position: absolute;
 
-    width:180px;
-    height:180px;
+    right: -30px;
+    bottom: 40px;
 
-    border-radius:50%;
+    width: 180px;
+    height: 180px;
 
-    background:#111827;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    color:#fff;
+    padding: 15px;
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    border: 6px solid #d4af37;
+    border-radius: 50%;
 
-    text-align:center;
+    background: #111827;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.2);
+    color: #ffffff;
 
-    border:6px solid #D4AF37;
+    text-align: center;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.2);
+
+    z-index: 3;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
-.experience-card h2{
-    font-size:48px;
-    color:#D4AF37;
-    margin-bottom:8px;
+.experience-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
-.experience-card p{
-    font-size:14px;
-    line-height:1.5;
+.experience-card h2 {
+    margin: 0 0 7px;
+
+    color: #d4af37;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    line-height: 1;
 }
 
-/* ===========================================
+.experience-card p {
+    max-width: 120px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+/* =========================================================
    CONTENT
-=========================================== */
+========================================================= */
 
-.brand-content span{
-    display:inline-block;
-    color:#D4AF37;
-    font-size:14px;
-    letter-spacing:4px;
-    font-weight:600;
-    text-transform:uppercase;
-    margin-bottom:18px;
+.brand-content {
+    width: 100%;
 }
 
-.brand-content h2{
-    font-family:"Playfair Display",serif;
-    font-size:50px;
-    color:#111827;
-    line-height:1.2;
-    margin-bottom:25px;
+.brand-content > span {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    color: #d4af37;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+    line-height: 1.4;
+
+    text-transform: uppercase;
 }
 
-.brand-content p{
-    color:#6B7280;
-    font-size:17px;
-    line-height:1.9;
-    margin-bottom:20px;
+.brand-content h2 {
+    margin: 0 0 25px;
+
+    color: #111827;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 50px;
+    font-weight: 700;
+
+    line-height: 1.2;
 }
 
-/* ===========================================
+.brand-content p {
+    max-width: 600px;
+
+    margin: 0 0 20px;
+
+    color: #6b7280;
+
+    font-size: 17px;
+
+    line-height: 1.9;
+}
+
+.brand-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* =========================================================
    STATS
-=========================================== */
+========================================================= */
 
-.brand-stats{
-    display:flex;
-    gap:50px;
-    margin:45px 0;
+.brand-stats {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 50px;
+
+    margin: 45px 0;
 }
 
-.brand-stats div{
-    position:relative;
+.brand-stats > div {
+    position: relative;
+
+    min-width: 0;
 }
 
-.brand-stats div::after{
-    content:"";
-    position:absolute;
-    right:-25px;
-    top:5px;
-    width:1px;
-    height:45px;
-    background:#ddd;
+.brand-stats > div:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+
+    top: 5px;
+    right: -25px;
+
+    width: 1px;
+    height: 45px;
+
+    background: #dddddd;
 }
 
-.brand-stats div:last-child::after{
-    display:none;
+.brand-stats h3 {
+    margin: 0 0 8px;
+
+    color: #111827;
+
+    font-size: 36px;
+    font-weight: 700;
+
+    line-height: 1.1;
 }
 
-.brand-stats h3{
-    font-size:36px;
-    color:#111827;
-    margin-bottom:8px;
+.brand-stats span {
+    display: block;
+
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    letter-spacing: 0;
+    line-height: 1.5;
+
+    text-transform: none;
 }
 
-.brand-stats span{
-    color:#6B7280;
-    font-size:15px;
-    letter-spacing:0;
-    text-transform:none;
-}
-
-/* ===========================================
+/* =========================================================
    BUTTON
-=========================================== */
+========================================================= */
 
-.brand-content button{
-    display:inline-flex;
-    align-items:center;
-    gap:12px;
+.brand-content button {
+    min-height: 54px;
 
-    padding:18px 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    border:none;
+    gap: 12px;
 
-    border-radius:50px;
+    padding: 16px 36px;
 
-    background:#111827;
+    border: 2px solid #111827;
+    border-radius: 50px;
 
-    color:#fff;
+    background: #111827;
 
-    font-size:16px;
-    font-weight:600;
+    color: #ffffff;
 
-    cursor:pointer;
+    font-family: inherit;
 
-    transition:.35s;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
 
-.brand-content button:hover{
-    background:#D4AF37;
-    color:#111827;
-    transform:translateY(-4px);
+.brand-content button:hover {
+    background: #d4af37;
+    border-color: #d4af37;
+
+    color: #111827;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* ===========================================
-   RESPONSIVE
-=========================================== */
-
-@media(max-width:1100px){
-
-.brand-container{
-    grid-template-columns:1fr;
+.brand-content button:active {
+    transform: translateY(0);
 }
 
-.brand-image{
-    max-width:650px;
-    margin:auto;
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .brand-story {
+        padding: 100px 0;
+    }
+
+    .brand-story .container {
+        padding: 0 30px;
+    }
+
+    .brand-container {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+    .brand-image {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+    .brand-image img {
+        height: 600px;
+    }
+
+    .experience-card {
+        right: 15px;
+        bottom: 30px;
+    }
+
+    .brand-content {
+        width: 100%;
+        max-width: 750px;
+
+        margin: 0 auto;
+    }
+
+    .brand-content p {
+        max-width: 100%;
+    }
 }
 
-.experience-card{
-    right:20px;
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .brand-story {
+        padding: 90px 0;
+    }
+
+    .brand-container {
+        gap: 50px;
+    }
+
+    .brand-image img {
+        height: 550px;
+    }
+
+    .brand-content h2 {
+        font-size: 44px;
+    }
+
+    .brand-content p {
+        font-size: 16px;
+    }
+
+    .experience-card {
+        width: 155px;
+        height: 155px;
+
+        border-width: 5px;
+    }
+
+    .experience-card h2 {
+        font-size: 40px;
+    }
+
+    .experience-card p {
+        font-size: 13px;
+    }
 }
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .brand-story {
+        padding: 75px 0;
+    }
+
+    .brand-story .container {
+        padding: 0 22px;
+    }
+
+    .brand-container {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    /* Image */
+
+    .brand-image {
+        max-width: 100%;
+    }
+
+    .brand-image img {
+        height: 500px;
+
+        border-radius: 24px;
+    }
+
+    /* Experience Card */
+
+    .experience-card {
+        right: 15px;
+        bottom: 20px;
+
+        width: 130px;
+        height: 130px;
+
+        border-width: 5px;
+    }
+
+    .experience-card h2 {
+        font-size: 34px;
+
+        margin-bottom: 5px;
+    }
+
+    .experience-card p {
+        max-width: 90px;
+
+        font-size: 12px;
+    }
+
+    /* Content */
+
+    .brand-content {
+        text-align: center;
+    }
+
+    .brand-content > span {
+        margin-bottom: 15px;
+
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+    .brand-content h2 {
+        margin-bottom: 20px;
+
+        font-size: 38px;
+
+        line-height: 1.25;
+    }
+
+    .brand-content p {
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    /* Stats */
+
+    .brand-stats {
+        justify-content: center;
+
+        gap: 35px;
+
+        margin: 35px 0;
+
+        flex-wrap: wrap;
+
+        text-align: center;
+    }
+
+    .brand-stats > div:not(:last-child)::after {
+        display: none;
+    }
+
+    .brand-stats h3 {
+        font-size: 32px;
+    }
+
+    .brand-stats span {
+        font-size: 14px;
+    }
+
+    /* Button */
+
+    .brand-content button {
+        min-height: 52px;
+
+        padding: 15px 32px;
+    }
 }
 
-@media(max-width:768px){
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
 
-.brand-story{
-    padding:90px 0;
+@media (max-width: 480px) {
+
+    .brand-story {
+        padding: 65px 0;
+    }
+
+    .brand-story .container {
+        padding: 0 17px;
+    }
+
+    .brand-container {
+        gap: 38px;
+    }
+
+    /* Image */
+
+    .brand-image img {
+        height: 380px;
+
+        border-radius: 20px;
+    }
+
+    /* Experience */
+
+    .experience-card {
+        right: 10px;
+        bottom: 15px;
+
+        width: 110px;
+        height: 110px;
+
+        padding: 10px;
+
+        border-width: 4px;
+    }
+
+    .experience-card h2 {
+        font-size: 28px;
+    }
+
+    .experience-card p {
+        max-width: 80px;
+
+        font-size: 11px;
+
+        line-height: 1.4;
+    }
+
+    /* Content */
+
+    .brand-content > span {
+        font-size: 11px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .brand-content h2 {
+        font-size: 30px;
+
+        line-height: 1.25;
+    }
+
+    .brand-content p {
+        font-size: 14px;
+
+        line-height: 1.75;
+    }
+
+    /* Stats */
+
+    .brand-stats {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 22px;
+
+        margin: 32px 0;
+    }
+
+    .brand-stats > div {
+        width: 100%;
+    }
+
+    .brand-stats h3 {
+        font-size: 30px;
+    }
+
+    .brand-stats span {
+        font-size: 13px;
+    }
+
+    /* Button */
+
+    .brand-content button {
+        width: 100%;
+
+        min-height: 50px;
+
+        padding: 14px 25px;
+
+        font-size: 14px;
+    }
 }
 
-.brand-image img{
-    height:500px;
-}
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
 
-.brand-content{
-    text-align:center;
-}
+@media (max-width: 360px) {
 
-.brand-content h2{
-    font-size:38px;
-}
+    .brand-story {
+        padding: 55px 0;
+    }
 
-.brand-content p{
-    font-size:15px;
-}
+    .brand-story .container {
+        padding: 0 14px;
+    }
 
-.brand-stats{
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
+    .brand-image img {
+        height: 330px;
 
-.brand-stats div::after{
-    display:none;
-}
+        border-radius: 18px;
+    }
 
-.experience-card{
-    width:140px;
-    height:140px;
-    right:10px;
-    bottom:20px;
-}
+    .experience-card {
+        width: 95px;
+        height: 95px;
 
-.experience-card h2{
-    font-size:34px;
-}
+        right: 8px;
+        bottom: 12px;
+    }
 
-}
+    .experience-card h2 {
+        font-size: 24px;
+    }
 
-@media(max-width:480px){
+    .experience-card p {
+        font-size: 10px;
+    }
 
-.brand-story{
-    padding:70px 0;
-}
+    .brand-content > span {
+        font-size: 10px;
 
-.brand-image img{
-    height:380px;
-    border-radius:20px;
-}
+        letter-spacing: 2px;
+    }
 
-.brand-content span{
-    font-size:12px;
-    letter-spacing:3px;
-}
+    .brand-content h2 {
+        font-size: 27px;
+    }
 
-.brand-content h2{
-    font-size:30px;
-}
+    .brand-content p {
+        font-size: 13px;
+    }
 
-.brand-content p{
-    font-size:14px;
-}
+    .brand-stats h3 {
+        font-size: 28px;
+    }
 
-.brand-stats{
-    flex-direction:column;
-    gap:20px;
-}
+    .brand-stats span {
+        font-size: 12px;
+    }
 
-.brand-stats h3{
-    font-size:30px;
-}
+    .brand-content button {
+        min-height: 48px;
 
-.brand-content button{
-    width:100%;
-    justify-content:center;
-}
-
-.experience-card{
-    width:120px;
-    height:120px;
-}
-
-.experience-card h2{
-    font-size:28px;
-}
-
-.experience-card p{
-    font-size:12px;
-}
-
+        font-size: 13px;
+    }
 }

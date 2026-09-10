@@ -48,7 +48,7 @@ function InstagramGallery() {
 
                                     <FaInstagram/>
 
-                                    <span>@blueparadisemenswear</span>
+                                    <span>@blue_paradise_menswear___</span>
 
                                 </div>
 

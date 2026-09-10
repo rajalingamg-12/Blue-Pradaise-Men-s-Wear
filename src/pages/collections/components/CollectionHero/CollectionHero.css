@@ -5,7 +5,7 @@
 
 .collection-hero{
 
-    height:90vh;
+    height:95vh;
 
     position:relative;
 
@@ -15,7 +15,7 @@
 
     align-items:center;
 
-    background-image:url("../../assets/collect.jpeg");
+    background-image:url("../../assets/blue37.jpeg");
 
     background-size:cover;
 

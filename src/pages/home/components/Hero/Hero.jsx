@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroBanner from "../../../../assets/banner-ecom.png";
+import heroBanner from "../../../../assets/blue18.jpeg";
 import { FaArrowRight } from "react-icons/fa";
 
 function Hero() {

@@ -3,11 +3,38 @@
 ========================================================== */
 
 .trending1 {
+    position: relative;
+
+    width: 100%;
+
     padding: 120px 0;
 
     background: #f8f9fb;
 
     overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.trending1 *,
+.trending1 *::before,
+.trending1 *::after {
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.trending1 .container {
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 25px;
 }
 
 
@@ -16,13 +43,23 @@
 ========================================================== */
 
 .trending1 .section-header1 {
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto 60px;
+
     text-align: center;
 
-    margin-bottom: 60px;
+    position: relative;
+
+    z-index: 2;
 }
 
 .trending1 .section-header1 span {
     display: inline-block;
+
+    margin: 0 0 15px;
 
     color: #d4af37;
 
@@ -31,30 +68,33 @@
 
     letter-spacing: 4px;
 
-    text-transform: uppercase;
+    line-height: 1.5;
 
-    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .trending1 .section-header1 h2 {
+    margin: 0 0 18px;
+
+    color: #111827;
+
     font-family: "Playfair Display", serif;
 
     font-size: 48px;
     font-weight: 700;
 
-    color: #111827;
-
-    margin-bottom: 18px;
+    line-height: 1.2;
 }
 
 .trending1 .section-header1 p {
     max-width: 650px;
 
-    margin: auto;
+    margin: 0 auto;
 
     color: #6b7280;
 
     font-size: 17px;
+    font-weight: 400;
 
     line-height: 1.8;
 }
@@ -67,49 +107,79 @@
 .trending-tabs1 {
     display: flex;
 
-    justify-content: center;
-
     align-items: center;
+
+    justify-content: center;
 
     flex-wrap: wrap;
 
-    gap: 18px;
+    gap: 14px;
 
-    margin-bottom: 60px;
+    width: 100%;
+
+    margin: 0 0 60px;
+
+    position: relative;
+
+    z-index: 3;
 }
 
 .trending-tabs1 button {
-    border: none;
+    display: inline-flex;
 
-    background: #fff;
+    align-items: center;
 
-    color: #374151;
+    justify-content: center;
 
-    padding: 14px 28px;
+    min-height: 46px;
+
+    padding: 12px 26px;
+
+    border: 1px solid transparent;
 
     border-radius: 40px;
 
-    font-size: 15px;
+    background: #ffffff;
 
+    color: #374151;
+
+    font-family: inherit;
+
+    font-size: 15px;
     font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
 
     cursor: pointer;
 
-    transition: all 0.35s ease;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.06);
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
 
 .trending-tabs1 button:hover {
     background: #111827;
 
-    color: #fff;
+    color: #ffffff;
 
     transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.1);
 }
 
 .trending-tabs1 button.active {
     background: #d4af37;
+
+    border-color: #d4af37;
 
     color: #111827;
 
@@ -125,9 +195,16 @@
 .trending-grid1 {
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
 
     gap: 30px;
+
+    position: relative;
+
+    z-index: 2;
 }
 
 
@@ -136,20 +213,34 @@
 ========================================================== */
 
 .trend-card1 {
-    background: #fff;
+    position: relative;
+
+    width: 100%;
+
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(17, 24, 39, 0.04);
 
     border-radius: 20px;
 
     overflow: hidden;
 
-    transition: all 0.4s ease;
-
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
 }
 
 .trend-card1:hover {
     transform: translateY(-10px);
+
+    border-color:
+        rgba(212, 175, 55, 0.2);
 
     box-shadow:
         0 25px 60px rgba(0, 0, 0, 0.12);
@@ -163,19 +254,26 @@
 .trend-image1 {
     position: relative;
 
+    width: 100%;
+
     overflow: hidden;
+
+    background: #f1f1f1;
 }
 
 .trend-image1 img {
+    display: block;
+
     width: 100%;
 
     height: 380px;
 
-    display: block;
-
     object-fit: cover;
 
-    transition: transform 0.7s ease;
+    object-position: center;
+
+    transition:
+        transform 0.7s ease;
 }
 
 .trend-card1:hover .trend-image1 img {
@@ -191,24 +289,31 @@
     position: absolute;
 
     top: 18px;
-
     left: 18px;
 
     z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 32px;
+
+    padding: 7px 15px;
 
     background: #d4af37;
 
     color: #111827;
 
-    padding: 8px 16px;
-
     border-radius: 30px;
 
     font-size: 12px;
-
     font-weight: 600;
 
     letter-spacing: 0.5px;
+
+    line-height: 1;
 }
 
 
@@ -220,43 +325,49 @@
     position: absolute;
 
     top: 18px;
-
     right: 18px;
 
     z-index: 3;
 
-    width: 46px;
+    display: flex;
 
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
     height: 46px;
+
+    padding: 0;
 
     border: none;
 
     border-radius: 50%;
 
-    background: #fff;
+    background: #ffffff;
 
     color: #111827;
 
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
     cursor: pointer;
-
-    transition: all 0.35s ease;
 
     box-shadow:
         0 8px 20px rgba(0, 0, 0, 0.12);
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
 
 .trend-heart1:hover {
     background: #d4af37;
 
-    color: #fff;
+    color: #ffffff;
 
     transform: scale(1.08);
+
+    box-shadow:
+        0 10px 24px rgba(212, 175, 55, 0.25);
 }
 
 
@@ -267,13 +378,13 @@
 .trend-heart1.active {
     background: #d4af37;
 
-    color: #fff;
+    color: #ffffff;
 }
 
 .trend-heart1.active:hover {
     background: #111827;
 
-    color: #fff;
+    color: #ffffff;
 }
 
 
@@ -282,19 +393,26 @@
 ========================================================== */
 
 .trend-content1 {
+    width: 100%;
+
     padding: 24px;
 }
 
 .trend-content1 h3 {
+    margin: 0 0 10px;
+
     color: #111827;
 
-    font-size: 22px;
-
+    font-size: 21px;
     font-weight: 600;
 
     line-height: 1.4;
 
-    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
 }
 
 
@@ -305,13 +423,14 @@
 .trend-price1 {
     display: block;
 
+    margin: 0 0 18px;
+
     color: #d4af37;
 
     font-size: 26px;
-
     font-weight: 700;
 
-    margin-bottom: 18px;
+    line-height: 1.3;
 }
 
 
@@ -321,6 +440,8 @@
 
 .trend-actions1 {
     display: flex;
+
+    align-items: stretch;
 
     gap: 10px;
 
@@ -335,31 +456,39 @@
 ========================================================== */
 
 .trend-actions1 button {
-    flex: 1;
+    flex: 1 1 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    width: 100%;
 
     min-height: 46px;
+
+    padding: 10px 12px;
 
     border: none;
 
     border-radius: 8px;
 
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 7px;
-
-    padding: 10px 12px;
+    font-family: inherit;
 
     font-size: 13px;
-
     font-weight: 600;
+
+    line-height: 1.2;
 
     cursor: pointer;
 
-    transition: all 0.3s ease;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 
@@ -370,7 +499,7 @@
 .trend-cart-btn1 {
     background: #111827;
 
-    color: #fff;
+    color: #ffffff;
 }
 
 .trend-cart-btn1:hover {
@@ -398,7 +527,7 @@
 .trend-buy-btn1:hover {
     background: #111827;
 
-    color: #fff;
+    color: #ffffff;
 
     transform: translateY(-3px);
 
@@ -408,7 +537,7 @@
 
 
 /* ==========================================================
-   ACTION BUTTON ACTIVE
+   BUTTON ACTIVE
 ========================================================== */
 
 .trend-actions1 button:active {
@@ -417,51 +546,64 @@
 
 
 /* ==========================================================
-   FOOTER
+   TRENDING FOOTER
 ========================================================== */
 
 .trend-footer1 {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
+    width: 100%;
+
     margin-top: 70px;
+
+    text-align: center;
 }
 
 .trend-footer1 button {
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 12px;
 
-    padding: 17px 38px;
+    min-height: 54px;
 
-    background: #111827;
-
-    color: #fff;
+    padding: 16px 38px;
 
     border: 1px solid #111827;
 
     border-radius: 50px;
 
-    font-size: 15px;
+    background: #111827;
 
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 15px;
     font-weight: 600;
+
+    line-height: 1;
 
     cursor: pointer;
 
-    transition: all 0.35s ease;
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
 
 .trend-footer1 button svg {
     font-size: 14px;
 
-    transition: transform 0.35s ease;
+    transition:
+        transform 0.35s ease;
 }
 
 .trend-footer1 button:hover {
@@ -483,62 +625,123 @@
 
 
 /* ==========================================================
-   LARGE TABLET / SMALL DESKTOP
+   LARGE TABLET — 1200px
 ========================================================== */
 
 @media (max-width: 1200px) {
 
-    .trending-grid1 {
-        grid-template-columns: repeat(2, 1fr);
+    .trending1 {
+        padding: 100px 0;
     }
 
+    .trending1 .container {
+        padding: 0 30px;
+    }
+
+    .trending-grid1 {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+    .trend-image1 img {
+        height: 350px;
+    }
 }
 
 
 /* ==========================================================
-   TABLET
+   TABLET — 992px
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .trending-grid1 {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+    .trending1 .section-header1 {
+        margin-bottom: 55px;
+    }
+
+    .trending1 .section-header1 h2 {
+        font-size: 42px;
+    }
+
+    .trend-image1 img {
+        height: 360px;
+    }
+}
+
+
+/* ==========================================================
+   MOBILE — 768px
 ========================================================== */
 
 @media (max-width: 768px) {
 
     .trending1 {
-        padding: 90px 0;
+        padding: 80px 0;
+    }
+
+    .trending1 .container {
+        padding: 0 22px;
     }
 
 
-    /* Section Header */
+    /* Header */
 
     .trending1 .section-header1 {
         margin-bottom: 45px;
     }
 
+    .trending1 .section-header1 span {
+        margin-bottom: 12px;
+
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
     .trending1 .section-header1 h2 {
+        margin-bottom: 15px;
+
         font-size: 36px;
+
+        line-height: 1.25;
     }
 
     .trending1 .section-header1 p {
+        padding: 0;
+
         font-size: 15px;
 
-        padding: 0 15px;
+        line-height: 1.8;
     }
 
 
     /* Tabs */
 
     .trending-tabs1 {
-        gap: 12px;
+        gap: 10px;
 
         margin-bottom: 45px;
     }
 
     .trending-tabs1 button {
-        padding: 12px 20px;
+        min-height: 43px;
 
-        font-size: 14px;
+        padding: 11px 20px;
+
+        font-size: 13px;
     }
 
 
-    /* Grid */
+    /* Product Grid */
 
     .trending-grid1 {
         grid-template-columns: 1fr;
@@ -547,34 +750,38 @@
     }
 
 
-    /* Image */
+    /* Product Image */
 
     .trend-image1 img {
-        height: 340px;
+        height: 400px;
     }
 
 
-    /* Content */
+    /* Product Content */
+
+    .trend-content1 {
+        padding: 22px;
+    }
 
     .trend-content1 h3 {
         font-size: 20px;
     }
 
     .trend-price1 {
-        font-size: 22px;
+        font-size: 23px;
     }
 
 
     /* Actions */
 
     .trend-actions1 {
-        gap: 8px;
+        gap: 9px;
     }
 
     .trend-actions1 button {
-        font-size: 12px;
+        min-height: 46px;
 
-        padding: 10px 8px;
+        font-size: 13px;
     }
 
 
@@ -585,76 +792,115 @@
     }
 
     .trend-footer1 button {
+        min-height: 52px;
+
         padding: 15px 30px;
 
         font-size: 14px;
     }
-
 }
 
 
 /* ==========================================================
-   MOBILE
+   MOBILE — 480px
 ========================================================== */
 
 @media (max-width: 480px) {
 
     .trending1 {
-        padding: 70px 0;
+        padding: 65px 0;
+    }
+
+    .trending1 .container {
+        padding: 0 17px;
     }
 
 
-    /* Section Header */
+    /* Header */
+
+    .trending1 .section-header1 {
+        margin-bottom: 40px;
+    }
+
+    .trending1 .section-header1 span {
+        font-size: 11px;
+
+        letter-spacing: 2.5px;
+    }
 
     .trending1 .section-header1 h2 {
         font-size: 30px;
     }
 
-    .trending1 .section-header1 span {
-        font-size: 12px;
-
-        letter-spacing: 3px;
-    }
-
     .trending1 .section-header1 p {
         font-size: 14px;
 
-        line-height: 1.7;
+        line-height: 1.75;
     }
 
 
     /* Tabs */
 
     .trending-tabs1 {
+        justify-content: center;
+
         gap: 8px;
 
         margin-bottom: 35px;
     }
 
     .trending-tabs1 button {
-        padding: 10px 16px;
+        min-height: 40px;
+
+        padding: 10px 15px;
 
         font-size: 12px;
+    }
+
+
+    /* Grid */
+
+    .trending-grid1 {
+        gap: 20px;
+    }
+
+
+    /* Card */
+
+    .trend-card1 {
+        border-radius: 18px;
     }
 
 
     /* Image */
 
     .trend-image1 img {
-        height: 300px;
+        height: 320px;
+    }
+
+
+    /* Badge */
+
+    .trend-badge1 {
+        top: 14px;
+        left: 14px;
+
+        min-height: 29px;
+
+        padding: 6px 12px;
+
+        font-size: 11px;
     }
 
 
     /* Wishlist */
 
     .trend-heart1 {
+        top: 14px;
+        right: 14px;
+
         width: 42px;
-
         height: 42px;
-
-        top: 15px;
-
-        right: 15px;
     }
 
 
@@ -665,13 +911,15 @@
     }
 
     .trend-content1 h3 {
+        margin-bottom: 8px;
+
         font-size: 18px;
     }
 
     .trend-price1 {
-        font-size: 22px;
-
         margin-bottom: 15px;
+
+        font-size: 22px;
     }
 
 
@@ -681,9 +929,13 @@
         flex-direction: column;
 
         gap: 8px;
+
+        margin-top: 12px;
     }
 
     .trend-actions1 button {
+        flex: none;
+
         width: 100%;
 
         min-height: 44px;
@@ -701,9 +953,108 @@
     .trend-footer1 button {
         width: 100%;
 
-        padding: 15px 20px;
+        min-height: 50px;
+
+        padding: 14px 20px;
 
         font-size: 14px;
     }
+}
 
+
+/* ==========================================================
+   SMALL MOBILE — 360px
+========================================================== */
+
+@media (max-width: 360px) {
+
+    .trending1 {
+        padding: 55px 0;
+    }
+
+    .trending1 .container {
+        padding: 0 14px;
+    }
+
+
+    /* Header */
+
+    .trending1 .section-header1 span {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+    .trending1 .section-header1 h2 {
+        font-size: 27px;
+    }
+
+    .trending1 .section-header1 p {
+        font-size: 13px;
+    }
+
+
+    /* Tabs */
+
+    .trending-tabs1 {
+        gap: 6px;
+    }
+
+    .trending-tabs1 button {
+        padding: 9px 12px;
+
+        font-size: 11px;
+    }
+
+
+    /* Image */
+
+    .trend-image1 img {
+        height: 280px;
+    }
+
+
+    /* Content */
+
+    .trend-content1 {
+        padding: 18px;
+    }
+
+    .trend-content1 h3 {
+        font-size: 17px;
+    }
+
+    .trend-price1 {
+        font-size: 20px;
+    }
+
+
+    /* Wishlist */
+
+    .trend-heart1 {
+        width: 39px;
+        height: 39px;
+
+        top: 12px;
+        right: 12px;
+    }
+
+
+    /* Badge */
+
+    .trend-badge1 {
+        top: 12px;
+        left: 12px;
+
+        padding: 6px 10px;
+
+        font-size: 10px;
+    }
+
+
+    /* Footer */
+
+    .trend-footer1 button {
+        font-size: 13px;
+    }
 }

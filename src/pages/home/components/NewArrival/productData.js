@@ -1,7 +1,7 @@
-import product1 from "../../../../assets/product1.jpeg";
-import product2 from "../../../../assets/product2.jpeg";
-import product3 from "../../../../assets/product3.jpeg";
-import product4 from "../../../../assets/product4.jpeg";
+import product1 from "../../../../assets/blue11.jpeg";
+import product2 from "../../../../assets/blue2.jpeg";
+import product3 from "../../../../assets/blue12.jpeg";
+import product4 from "../../../../assets/blue4.jpeg";
 
 const products = [
 
@@ -10,18 +10,18 @@ const products = [
         image:product1,
         name:"Classic Linen Shirt",
         category:"Shirts Set",
-        price:1499,
-        oldPrice:1999,
+        price:999,
+        oldPrice:1499,
         badge:"NEW"
     },
 
     {
         id:2,
         image:product2,
-        name:"Slim Fit T-Shirt",
+        name:"Slim Fit Track Set",
         category:"T-Shirts Fit",
-        price:999,
-        oldPrice:1299,
+        price:1299,
+        oldPrice:1599,
         badge:"HOT"
     },
 
@@ -30,8 +30,8 @@ const products = [
         image:product3,
         name:"Cargo Fit Jeans",
         category:"Jeans Set",
-        price:2199,
-        oldPrice:2799,
+        price:999,
+        oldPrice:1299,
         badge:"SALE"
     },
 
@@ -40,8 +40,8 @@ const products = [
         image:product4,
         name:"Premium Suit",
         category:"Suits Set",
-        price:4999,
-        oldPrice:5999,
+        price:699,
+        oldPrice:1099,
         badge:"NEW"
     }
 

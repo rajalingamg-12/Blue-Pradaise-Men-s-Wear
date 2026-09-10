@@ -2,12 +2,12 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-import newArrival from "../../assets/coll1.jpeg";
-import formalColl from "../../assets/coll2.jpeg";
-import CasualWear from "../../assets/coll3.jpeg";
-import WeddingWear from "../../assets/coll4.jpeg";
-import HoodyWear from "../../assets/coll5.jpeg";
-import AccesWear from "../../assets/coll6.jpeg";
+import newArrival from "../../assets/bluesh1.jpeg";
+import tshirtColl from "../../assets/bluesh2.jpeg";
+import CasualshortsWear from "../../assets/bluesh3.jpeg";
+import BottomWear from "../../assets/bluesh4.jpeg";
+import FootWear from "../../assets/bluesh5.jpeg";
+import AccesWear from "../../assets/bluesh6.jpeg";
 
 import "./CollectionGrid.css";
 
@@ -33,9 +33,9 @@ function CollectionGrid(){
 
         {
 
-            title:"Formal Collection",
+            title:"T-Shirts Collection",
 
-            image:formalColl,
+            image:tshirtColl,
 
             description:
             "Classic outfits designed for professional confidence."
@@ -45,9 +45,9 @@ function CollectionGrid(){
 
         {
 
-            title:"Casual Wear",
+            title:"Casual Shorts Wear",
 
-            image:CasualWear,
+            image:CasualshortsWear,
 
             description:
             "Comfortable everyday fashion with premium quality."
@@ -57,9 +57,9 @@ function CollectionGrid(){
 
         {
 
-            title:"Wedding Collection",
+            title:"Pants Collection",
 
-            image:WeddingWear,
+            image:BottomWear,
 
             description:
             "Exclusive styles for your special moments."
@@ -69,12 +69,12 @@ function CollectionGrid(){
 
         {
 
-            title:"Premium Shirts",
+            title:"Premium Socks & Footwear",
 
-            image:HoodyWear,
+            image:FootWear,
 
             description:
-            "Elegant shirts for every occasion."
+            "Elegant socks for every occasion."
 
         },
 
