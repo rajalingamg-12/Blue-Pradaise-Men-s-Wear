@@ -10,16 +10,16 @@ const categories = [
   "Trousers"
 ];
 
-const brands = [
-  "Louis Philippe",
-  "Allen Solly",
-  "Peter England",
-  "Levi's",
-  "Van Heusen",
-  "Jack & Jones",
-  "Arrow",
-  "U.S. Polo"
-];
+// const brands = [
+//   "Louis Philippe",
+//   "Allen Solly",
+//   "Peter England",
+//   "Levi's",
+//   "Van Heusen",
+//   "Jack & Jones",
+//   "Arrow",
+//   "U.S. Polo"
+// ];
 
 const colors = [
   "White",
@@ -97,7 +97,7 @@ function FilterSidebar({
 
       {/* Brand */}
 
-      <div className="filter-section">
+      {/* <div className="filter-section">
 
         <h4>Brand</h4>
 
@@ -119,7 +119,7 @@ function FilterSidebar({
 
         ))}
 
-      </div>
+      </div> */}
 
       {/* Color */}
 

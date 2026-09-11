@@ -38,8 +38,8 @@ const products = [
     {
         id:4,
         image:product4,
-        name:"Premium Suit",
-        category:"Suits Set",
+        name:"Premium T-Shirts",
+        category:"T-Shirts",
         price:699,
         oldPrice:1099,
         badge:"NEW"
